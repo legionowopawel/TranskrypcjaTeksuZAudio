@@ -1,0 +1,14 @@
+# Ignorowanie środowiska wirtualnego
+venv/
+
+# Pliki cache Pythona
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pliki tymczasowe edytorów
+*.swp
+.DS_Store
+
+# Możesz dodać inne pliki, które chcesz pominąć (np. wirtualne_srodowisko.txt jeśli nie jest potrzebny)

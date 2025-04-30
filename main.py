@@ -102,7 +102,7 @@ class TranscriptionApp:
         # Pobierz rozdzielczość ekranu, wycentruj okno
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
-        win_width, win_height = 1680, 1050
+        win_width, win_height = 800, 600
         x = (screen_width - win_width) // 2
         y = (screen_height - win_height) // 2
         self.root.geometry(f"{win_width}x{win_height}+{x}+{y}")
