@@ -20,7 +20,7 @@ Zapisywacz Tekstu 2025 to aaplikacja do automatycznej transkrypcji plików audio
 - Wsparcie dla przetwarzania na CPU lub GPU (NVIDIA z CUDA)
 
 ## Wymagania systemowe
-- Python 3.13.x (program działa TYLKO z tą wersją Pythona)
+- Python 3.13.x (sprawdzona na tej wersji Pythona)
 - CUDA 11.8 (program działa TYLKO z tą wersją CUDA)
 - Biblioteki: torch, whisper, moviepy, pydub, resemblyzer, spectralcluster, numpy, soundfile, librosa
 - Dla pełnej wydajności: karta graficzna NVIDIA wspierająca CUDA 11.8 oraz min. 3GB VRAM
@@ -47,8 +47,12 @@ Pobierz CUDA 11.8 ze strony NVIDIA: [https://developer.nvidia.com/cuda-11-8-0-do
 git clone https://github.com/legionowopawel/TranskrypcjaTeksuZAudio.git
 ```
 
-### 3. Zainstaluj wymagane biblioteki:
+### 3. Zainstaluj wymagane środowisko i biblioteki:
 ```
+py -3.13 -m venv venv
+venv\Scripts\activate
+python.exe -m pip install --upgrade pip
+pip install -r requirements.txt
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 pip check
